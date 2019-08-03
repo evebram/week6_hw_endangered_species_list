@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Endangered Animals</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
+
+  <body>
+    <form id="form-wrap">
+      <div id="form-wrapper">
+
+        <div class="form-item">
+          <label for="common-name">Common Name:</label>
+          <input type="text" name="common_name">
+        </div>
+
+        <div class="form-item">
+          <label for="scientific-name">Scientific Name:</label>
+          <input type="text" name="scientific_name">
+        </div>
+
+        <!-- <div class="form-item">
+          <label for="continent">Continent:</label>
+          <input type="checkbox" name="continent">
+        </div> -->
+
+        <div class="form-item">
+          <label for="category" class="primary">Conservation Status:</label>
+          <select id="category">
+            <option value="" disabled selected></option>
+            <option value="Critical">Critically Endangered</option>
+            <option value="Endangered">Endangered</option>
+            <option value="Vunerable">Vunerable</option>
+            <option value="Threatened">Near Threatened</option>
+            <option value="Least">Least Concern</option>
+          </select>
+        </div>
+
+      </div>
+
+    </form>
+  </body>
+
+</html>
