@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <title>Endangered Animals</title>
     <script src="js/app.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
   </head>
 
   <body>
-    <form id="form-wrap">
+    <form id="new-item-form">
       <div id="form-wrapper">
 
         <div class="form-item">
@@ -28,20 +28,25 @@
         </div> -->
 
         <div class="form-item">
-          <label for="category" class="primary">Conservation Status:</label>
-          <select id="category">
+          <label for="status" class="primary">Conservation Status:</label>
+          <select id="status">
             <option value="" disabled selected></option>
-            <option value="Critical">Critically Endangered</option>
+            <option value="Critically Endangered">Critically Endangered</option>
             <option value="Endangered">Endangered</option>
             <option value="Vunerable">Vunerable</option>
-            <option value="Threatened">Near Threatened</option>
-            <option value="Least">Least Concern</option>
+            <option value="Near Threatened">Near Threatened</option>
+            <option value="Least Concern">Least Concern</option>
           </select>
         </div>
 
       </div>
-
+      <input type="submit" value="Save"/>
     </form>
+
+    <h1>Endangered Species List</h1>
+    <button id="delete-all">Delete All</button>
+    <div id="species-list"></div>
+
   </body>
 
 </html>
