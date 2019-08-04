@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const animalCommon = event.target.common_name.value;
       const animalScientific = event.target.scientific_name.value;
       const animalStatus = event.target.status.value;
+      const animalContinent = event.target.continent.value;
 
       const animalEntry = document.createElement('div');
 
@@ -21,6 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const status = document.createElement('p');
       status.textContent = animalStatus;
       animalEntry.appendChild(status);
+
+      const continent = document.createElement('p');
+      continent.textContent = animalContinent;
+      animalEntry.appendChild(continent);
 
       speciesList = document.querySelector('#species-list');
       speciesList.appendChild(animalEntry);
